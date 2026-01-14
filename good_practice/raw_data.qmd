@@ -1,0 +1,55 @@
+# Raw data 
+
+## What is raw data? 
+
+In bioinformatics, raw data are unprocessed output from a specific technology. It is data that you cannot regenerate (or not easily), and that should never be modified. The type of files can vary, but a good exemple for sequencing technologies is `.fastq` files. 
+
+Sometimes, the sequencing platform will also give you some pre- or fully analyzed data. An example in the case of single-cell RNA-seq is cell-by-gene matrices. If it is the basis of your analysis, you should consider them just like raw data.
+
+These files are required to publish. 
+
+## Where to save raw data?
+
+At the IGBMC, there are two storage infrastructures for scientific data, their usage is described [here](https://it.igbmc.fr/storage-of-scientific-data), but as a reminder:
+
+| Storage | Usage | Replication | Daily snapshots | 
+| ------------- | ------------- | ------------- | ------------- |
+| `mendel` | Data analysis, active projects  | Yes | Kept 30 days | 
+| `space2` | Data conservation, finished projects | No | Kept for 3 days | 
+
+So in practice, you should save your raw and analyzed data to a `mendel` space. 
+
+Once your analysis is finished and ready for publication, you should upload them on a database, and you can now leave them on `space2`. 
+
+Once your paper is published, and the data is accessible online for all (e.g. on [GEO](https://www.ncbi.nlm.nih.gov/)), you can remove from `space2` any file that is now accessible online. But do add a `.txt` file that specifies how the data can be retrieved (e.g an accession code).
+
+## Steps to save raw data
+
+So here are the general steps on how to correctly save raw data:
+
+- Download the data and store them securely: Save them on a mendel space or a backed-up institutional storage. Do not save your data only on your local computer, if it is broken, lost, or stolen, the data will be lost forever.
+  
+- Verify its integrity: Along with your data, you should have a way to verify the data was not corrupted during its download. For example, you might be given the [md5](https://en.wikipedia.org/wiki/MD5) of files. You must always keep the file containing the original md5 values together with the data. 
+
+:::{.callout-note}
+A md5 is 32-character fingerprint of the file. If the file is not exactly the same as the original one, recomputing the md5 will give a different result and you will know that your file was corrupted (i.e. modified, truncated…). 
+
+![md5 principle: changing even one character will modify the md5. [image source: techtarget.com](https://www.techtarget.com/searchsecurity/definition/MD5)](../img/md5.jpeg){}
+:::
+
+:::{.callout-tip}
+In R, you can for example run `tools::md5sum("/path/to/file")` to get the md5 of a file.
+:::
+
+- Do not touch it anymore:  Make the files only readable. You can go to the Properties of a file and set its permission to `Read only`. Or using command line, you can restrain the modification of a folder with `chmod -r 444 /path/to/folder`. This also includes not changing the name of the files! If you need to put some data in another folder, or with another name, you can create symbolic links with `ln -s` in bash, or a shortcut file. 
+
+## What about metadata? 
+
+Data is a collection of raw and unorganized information. Without proper processing, organizing, and information about it, it cannot be interpreted. 
+Metadata is data about data. It gives a description and a context about the data. It can be the species, tissue type or conditions of the samples, as well as the lab protocol, sequencing technology etc... 
+
+![Data and metadata. Without metadata, you don't know what is inside your data. So always retain metadata together with the data.](../img/data-metadata.png){width="400"}
+
+If you filled GenomEast's LIMS correctly, you already have some of that information. You can save the project page of the study as a pdf and put it in the folder that contains the data. It contains general information about the study (ID, title, technology, date, collaborators, aim, description of samples...). You can also fill and export the table of the Samples conditions in `.csv` format. 
+
+
