@@ -16,6 +16,9 @@ This repository contains information needed by a new comer in the  [PROVitD Lab]
 
 Currently, you can read about the following topics:
 
+- [good_practice](good_practice/)
+  - [organize_analysis](good_practice/organize_analysis.qmd): how to organize bioinformatics analysis
+  - [raw_data](good_practice/raw_data.qmd): how to deal with raw data (and metadata)
 - [R](R/)
   - [renv](R/renv.md): managing package versions in R 
 - [singlecell](singlecell/)
