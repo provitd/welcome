@@ -1,0 +1,104 @@
+# Organize an analysis 
+
+## Generalities
+
+In the lab, we organize analysis based on projects (`2025_scRNA_patient_prostate`), not based on people (`JaneDoe_scRNA`). It helps unsure that even after a person leaves the lab, we can retrieve their analysis easily. 
+
+We aim to keep the same organization inside folders. This organisation is still a work in progress. If you have suggestions to make it better, please share with the lab your ideas! 
+
+An analysis should be breakable in a couple of folders:
+
+- `data/` it should contain (links) to raw data. It also contains useful metadata.
+A link can be created in R like so: `R.utils::createLink(link, target)`
+
+- `script/` it should contain one or several (organised) scripts that can be run from start to finish to reproduce your analysis. Create folders for specific subanalysis with the date as a prefix (e.g `YYMMDD_trajectory_Luminal`) make sure to use the same structure in the `result/` folder.
+A folder can be created in R like so: `dir.create(directory)`
+
+- `result/` it should contain tables, plots, R object that were produced during the analysis. You can create specific folder to keep a nice structure, for example `figure`, `table`, `rds`...
+
+- `doc/` containing various documentation that needs to be save, for example important related papers
+
+An example of an analysis folder could be:
+
+```
+├── data
+│   ├── ABCetall_2021_scRNA -> ../../../litterature/ABCetal_2021_scRNA/
+│   ├── S19192_scRNA -> ../../../projects/S19192/
+│   ├── S22024_S22194_snATACseq -> ../../../projects/S22024_S22194_snATACseq/
+│   └── S23036_spatial -> ../../../projects/S23036_CytAssist
+├── doc
+│   └── presentation
+│       ├── 200314-scRNA-labmeeting.pdf
+│       ├── 230122-snATAC-labmeeting.pdf
+│       ├── 230701-snATAC-congress.pdf
+│       └── 231214-spatial-labmeeting.pdf
+│   └── litterature
+│       ├── ABCetal_2021.pdf
+│       └── XYZetal_2019.pdf
+├── analysis
+│   └── 200301_scRNA
+│       └── 200301_preprocessing
+│           ├── preprocessing.qmd
+│           ├── preprocessing.html
+│           └── rds
+│               ├── original_seurat.rds
+│               └── preprocessed_seurat.rds
+│           └── figure
+│               ├── PCAPlot.png
+│               ├── UMAPPlot.png
+│               ├── VlnPlot_postfilter.png
+│               └── VlnPlot_prefilter.png
+│       └── 200304_integration
+│           ├── integration.qmd
+│           ├── integration.html
+│           └── rds
+│               └── integrated_seurat.rds
+│           └── figure
+│               └── UMAPPlot_integrated.png
+│       └── 200306_cell_annotation
+│           ├── cell_annotation.qmd
+│           ├── cell_annotation.html
+│           └── rds
+│               └── annotated_seurat.rds
+│           └── figure
+│               ├── UMAPPlot_CellSubType.csv
+│               └── UMAPPlot_CellType.png
+│           └── table
+│               ├── cell_annotation_CellSubType.csv
+│               ├── cell_annotation_CellType.csv
+│               ├── FindAllMarkers_CellSubType.csv
+│               └── FindAllMarkers_CellType.csv
+│       └── 200308_trajectory_Luminal
+│           ├── trajectory_Luminal.qmd
+│           ├── trajectory_Luminal.html
+│           └── rds
+│               └── trajectory_Luminal.rds
+│           └── figure
+│               └── trajectory_Luminal.png
+│   └── 230103_snATAC
+│      ...
+│   └── 231202_spatial
+│      ...
+└── README.txt
+```
+
+## Data
+
+Why make links? 
+Reminder to never touch original data. md5 
+Explain how to create good metadata
+
+## Analysis
+
+In the `analysis/` folder, the general rule is to have one folder per subanalysis. The subanalysis folder is named with the date and a general title (e.g. `200301_scRNA/`). You can create as many subanalysis and subfolders as necessary (e.g. `200301_scRNA/200301_preprocessing/`). 
+In each subanalysis folder, there is one script, most likely a quarto document `.qmd` that creates an easily readable report in `.html`. 
+Any result created by this script is present in the same folder. If many results are created, organise them into folders (e.g. `rds/` for saving R objects, `figure/` for saving plots, `table/` for saving tables etc.).
+
+Think about the architecture of your folder before starting your analysis. For this you need to break down your general idea of the analysis into smaller chunks.
+Are you going to analysis one or several datasets (and so, create one folder per dataset)? 
+What are the planned steps of your analysis (and so, create one folder per step for a given dataset)? 
+Of course, you might not know all of the analyses you will do in advance, but you will get an idea of the level of complexity of the architecture of folders to create.
+
+This is important as it is not a good practice to move and rename folders or files. Some scripts depend on the results of previous analyses, so moving and renaming folders or files can create discrepencies in other analyses. 
+
+TODO: do we allow for no folder to save results (e.g. if you only have one table as results, should it be in a table/ folder or just a table.csv is ok)
