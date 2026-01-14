@@ -52,4 +52,36 @@ Metadata is data about data. It gives a description and a context about the data
 
 If you filled GenomEast's LIMS correctly, you already have some of that information. You can save the project page of the study as a pdf and put it in the folder that contains the data. It contains general information about the study (ID, title, technology, date, collaborators, aim, description of samples...). You can also fill and export the table of the Samples conditions in `.csv` format. 
 
+A metadata file for your samples can be in a excel, `.csv`, `.tsv`, `.txt` format, or any format that can be easily exploited in further analysis in a programming language. 
+What is important that:
+
+- each samples have a unique identifier
+- one variable corresponds to one column
+- have consistant values inside of the column
+
+For example:
+
+```
+,Condition_treatment
+Sample1,Control_6
+Sample2,TreatmentA_6
+Sample3,TreatmentB_6
+Sample4,ctrl_9
+Sample5,TreatmentA_6
+Sample6,TreatmentB_6
+```
+is bad! There are two variables in the same column (`Condition_treatment` should be seperated into `Condition` and `Treatment` ), and the values in this column are not consistent (`Control` is not the same as `cntrl`).
+
+```
+,Condition,Age
+Sample1,Control,6
+Sample2,TreatmentA,6
+Sample3,TreatmentB,6
+Sample4,Control,9
+Sample5,TreatmentA,9
+Sample6,TreatmentB,9
+```
+
+is good. 
+
 
