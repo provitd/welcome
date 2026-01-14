@@ -84,9 +84,26 @@ An example of an analysis folder could be:
 
 ## Data
 
-Why make links? 
-Reminder to never touch original data. md5 
-Explain how to create good metadata
+Do not copy all of the data to your `data/` folder if it is already stored somewhere. 
+It saves space (as there won't be several copy of the same heavy raw data), and makes sure that there is only one place where the raw data can be found to avoid confusion. Remember, you should never modify raw data files.
+Instead, use a shortchut, or a link, to the folder. 
+This can be done in bash like so:
+
+```
+ln -s <target> <symlink>
+```
+
+where you remplace <target> by the folder from which to create the link, and <symlink> by the name to give the symbolic link (or shortcut), e.g. `ln -s S19192_scRNA ../../../projects/S19192/`
+
+or in R like so:
+
+```
+createLink(link=symlink, target)
+```
+
+where you remplace `target` by the folder from which to create the link, and `symlink` by the name to give the symbolic link (or shortcut), e.g. `createLink(link="S19192_scRNA", "../../../projects/S19192/")`
+
+Useful metadata should already be associated with the raw data. 
 
 ## Analysis
 
