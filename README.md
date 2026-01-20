@@ -21,10 +21,9 @@ Currently, you can read about the following topics:
   - [raw_data](good_practice/raw_data.qmd): how to deal with raw data (and metadata)
 - [R](R/)
   - [renv](R/renv.md): managing package versions in R 
-- [singlecell](singlecell/)
-  - [ressources](singlecell/ressources.md): package and doc on single-cell analysis
-- [workshop-training](workshop-training/)
-  - [ressources](workshop-training/ressources.md): link to in-person and online workshop/trainings
+- [ressources](ressources/)
+  - [singlecell](ressources/singlecell.md): package and doc on single-cell analysis
+  - [workshop-training](ressources/workshop-training.md): link to in-person and online workshop/trainings
 
 
 Follow the links to various cheat sheets and print them out to decorate your desk:
