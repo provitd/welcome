@@ -1,5 +1,5 @@
 - [Hello and `welcome` 👋](#hello-and-welcome-)
-  - [PROVitD Lab](#provitd-lab)
+  - [PROVitD Group](#provitd-group)
   - [Summary](#summary)
   - [Roadmap](#roadmap)
   - [Contributing](#contributing)
@@ -7,9 +7,9 @@
 
 # Hello and `welcome` 👋
 
-## PROVitD Lab
+## PROVitD Group
 
-This repository contains information needed by a new comer in the  [PROVitD Lab](https://www.igbmc.fr/equipes/sous-groupes/roles-physiopathologiques-des-voies-de-signalisation-de-la-vitamine-d) regarding data management in the lab, use of this gitlab, ressources on bioinformatics topics...
+This repository contains information needed by a new comer in the  [PROVitD Group](https://www.igbmc.fr/equipes/sous-groupes/roles-physiopathologiques-des-voies-de-signalisation-de-la-vitamine-d) regarding data management in the lab, use of this gitlab, ressources on bioinformatics topics...
 
 ## Summary
 
