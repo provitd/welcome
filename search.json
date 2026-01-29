@@ -1,0 +1,230 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "welcome booklet",
+    "section": "",
+    "text": "1 Hello and welcome 👋",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome` 👋</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#provitd-group",
+    "href": "index.html#provitd-group",
+    "title": "welcome booklet",
+    "section": "1.1 PROVitD Group",
+    "text": "1.1 PROVitD Group\nThis book contains information needed by a new comer in the PROVitD Group regarding data management in the lab, use of this gitlab, ressources on bioinformatics topics…",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome` 👋</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#cheat-sheet",
+    "href": "index.html#cheat-sheet",
+    "title": "welcome booklet",
+    "section": "1.2 Cheat Sheet",
+    "text": "1.2 Cheat Sheet\nYou can also follow the links to various cheat sheets and print them out to decorate your desk:\n\nR: to discover R universe\n\nBase R: to get started with R\nRStudio: to get started with RStudio\nR Best Practice: to improve your R skills\nggplot2: to get started with generating plots\ndplyr: to manipulate datatables\ntidyr: to tidy datatables\nquarto: to create beautiful notebooks with integrated code\nrmarkdown: to create beautiful notebooks with integrated code (deprecated)\n\ngit: to version control code\n\ngit branching model: to develop tools with version control\n\nconda: to use contained and reproducible package environment",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome` 👋</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/raw_data.html",
+    "href": "good_practice/raw_data.html",
+    "title": "2  Raw data",
+    "section": "",
+    "text": "2.1 What is raw data?\nIn bioinformatics, raw data are unprocessed output from a specific technology. It is data that you cannot regenerate (or not easily), and that should never be modified. The type of files can vary, but a good exemple for sequencing technologies is .fastq files.\nSometimes, the sequencing platform will also give you some pre- or fully analyzed data. An example in the case of single-cell RNA-seq is cell-by-gene matrices. If it is the basis of your analysis, you should consider them just like raw data.\nThese files are required to publish.",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Raw data</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/raw_data.html#where-to-save-raw-data",
+    "href": "good_practice/raw_data.html#where-to-save-raw-data",
+    "title": "2  Raw data",
+    "section": "2.2 Where to save raw data?",
+    "text": "2.2 Where to save raw data?\nAt the IGBMC, there are two storage infrastructures for scientific data, their usage is described here, but as a reminder:\n\n\n\n\n\n\n\n\n\nStorage\nUsage\nReplication\nDaily snapshots\n\n\n\n\nmendel\nData analysis, active projects\nYes\nKept 30 days\n\n\nspace2\nData conservation, finished projects\nNo\nKept for 3 days\n\n\n\nSo in practice, you should save your raw and analyzed data to a mendel space.\nOnce your analysis is finished and ready for publication, you should upload them on a database, and you can now leave them on space2.\nOnce your paper is published, and the data is accessible online for all (e.g. on GEO), you can remove from space2 any file that is now accessible online. But do add a .txt file that specifies how the data can be retrieved (e.g an accession code).",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Raw data</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/raw_data.html#steps-to-save-raw-data",
+    "href": "good_practice/raw_data.html#steps-to-save-raw-data",
+    "title": "2  Raw data",
+    "section": "2.3 Steps to save raw data",
+    "text": "2.3 Steps to save raw data\nSo here are the general steps on how to correctly save raw data:\n\nDownload the data and store them securely: Save them on a mendel space or a backed-up institutional storage. Do not save your data only on your local computer, if it is broken, lost, or stolen, the data will be lost forever.\nVerify its integrity: Along with your data, you should have a way to verify the data was not corrupted during its download. For example, you might be given the md5 of files. You must always keep the file containing the original md5 values together with the data.\n\n\n\n\n\n\n\nNote\n\n\n\nA md5 is 32-character fingerprint of the file. If the file is not exactly the same as the original one, recomputing the md5 will give a different result and you will know that your file was corrupted (i.e. modified, truncated…).\n\n\n\n\n\n\n\n\nTip\n\n\n\nIn R, you can for example run tools::md5sum(\"/path/to/file\") to get the md5 of a file.\n\n\n\nDo not touch it anymore: Make the files only readable. You can go to the Properties of a file and set its permission to Read only. Or using command line, you can restrain the modification of a folder with chmod -r 444 /path/to/folder. This also includes not changing the name of the files! If you need to put some data in another folder, or with another name, you can create symbolic links with ln -s in bash, or a shortcut file.",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Raw data</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/raw_data.html#what-about-metadata",
+    "href": "good_practice/raw_data.html#what-about-metadata",
+    "title": "2  Raw data",
+    "section": "2.4 What about metadata?",
+    "text": "2.4 What about metadata?\nData is a collection of raw and unorganized information. Without proper processing, organizing, and information about it, it cannot be interpreted. Metadata is data about data. It gives a description and a context about the data. It can be the species, tissue type or conditions of the samples, as well as the lab protocol, sequencing technology etc…\nIf you filled GenomEast’s LIMS correctly, you already have some of that information. You can save the project page of the study as a pdf and put it in the folder that contains the data. It contains general information about the study (ID, title, technology, date, collaborators, aim, description of samples…). You can also fill and export the table of the Samples conditions in .csv format.\nA metadata file for your samples can be in a excel, .csv, .tsv, .txt format, or any format that can be easily exploited in further analysis in a programming language. What is important that:\n\neach samples have a unique identifier\none variable corresponds to one column\nhave consistant values inside of the column\n\nFor example:\n,Condition_treatment\nSample1,Control_6\nSample2,TreatmentA_6\nSample3,TreatmentB_6\nSample4,ctrl_9\nSample5,TreatmentA_6\nSample6,TreatmentB_6\nis bad! There are two variables in the same column (Condition_treatment should be seperated into Condition and Treatment ), and the values in this column are not consistent (Control is not the same as cntrl).\n,Condition,Age\nSample1,Control,6\nSample2,TreatmentA,6\nSample3,TreatmentB,6\nSample4,Control,9\nSample5,TreatmentA,9\nSample6,TreatmentB,9\nis good.",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Raw data</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/organize_analysis.html",
+    "href": "good_practice/organize_analysis.html",
+    "title": "3  Organize an analysis",
+    "section": "",
+    "text": "3.1 Generalities\nIn the lab, we organize analysis based on projects (2025_scRNA_patient_prostate), not based on people (JaneDoe_scRNA). It helps unsure that even after a person leaves the lab, we can retrieve their analysis easily.\nWe aim to keep the same organization inside folders. This organisation is still a work in progress. If you have suggestions to make it better, please share with the lab your ideas!\nAn analysis should be breakable in a couple of folders:\nAn example of an analysis folder could be:",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organize an analysis</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/organize_analysis.html#generalities",
+    "href": "good_practice/organize_analysis.html#generalities",
+    "title": "3  Organize an analysis",
+    "section": "",
+    "text": "data/ it should contain (links) to raw data. It also contains useful metadata. A link can be created in R like so: R.utils::createLink(link, target)\nscript/ it should contain one or several (organised) scripts that can be run from start to finish to reproduce your analysis. Create folders for specific subanalysis with the date as a prefix (e.g YYMMDD_trajectory_Luminal) make sure to use the same structure in the result/ folder. A folder can be created in R like so: dir.create(directory)\nresult/ it should contain tables, plots, R object that were produced during the analysis. You can create specific folder to keep a nice structure, for example figure, table, rds…\ndoc/ containing various documentation that needs to be save, for example important related papers\n\n\n├── data\n│   ├── ABCetall_2021_scRNA -&gt; ../../../litterature/ABCetal_2021_scRNA/\n│   ├── S19192_scRNA -&gt; ../../../projects/S19192/\n│   ├── S22024_S22194_snATACseq -&gt; ../../../projects/S22024_S22194_snATACseq/\n│   └── S23036_spatial -&gt; ../../../projects/S23036_CytAssist\n├── doc\n│   └── presentation\n│       ├── 200314-scRNA-labmeeting.pdf\n│       ├── 230122-snATAC-labmeeting.pdf\n│       ├── 230701-snATAC-congress.pdf\n│       └── 231214-spatial-labmeeting.pdf\n│   └── litterature\n│       ├── ABCetal_2021.pdf\n│       └── XYZetal_2019.pdf\n├── analysis\n│   └── 200301_scRNA\n│       └── 200301_preprocessing\n│           ├── preprocessing.qmd\n│           ├── preprocessing.html\n│           └── rds\n│               ├── original_seurat.rds\n│               └── preprocessed_seurat.rds\n│           └── figure\n│               ├── PCAPlot.png\n│               ├── UMAPPlot.png\n│               ├── VlnPlot_postfilter.png\n│               └── VlnPlot_prefilter.png\n│       └── 200304_integration\n│           ├── integration.qmd\n│           ├── integration.html\n│           └── rds\n│               └── integrated_seurat.rds\n│           └── figure\n│               └── UMAPPlot_integrated.png\n│       └── 200306_cell_annotation\n│           ├── cell_annotation.qmd\n│           ├── cell_annotation.html\n│           └── rds\n│               └── annotated_seurat.rds\n│           └── figure\n│               ├── UMAPPlot_CellSubType.csv\n│               └── UMAPPlot_CellType.png\n│           └── table\n│               ├── cell_annotation_CellSubType.csv\n│               ├── cell_annotation_CellType.csv\n│               ├── FindAllMarkers_CellSubType.csv\n│               └── FindAllMarkers_CellType.csv\n│       └── 200308_trajectory_Luminal\n│           ├── trajectory_Luminal.qmd\n│           ├── trajectory_Luminal.html\n│           └── rds\n│               └── trajectory_Luminal.rds\n│           └── figure\n│               └── trajectory_Luminal.png\n│   └── 230103_snATAC\n│      ...\n│   └── 231202_spatial\n│      ...\n└── README.txt",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organize an analysis</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/organize_analysis.html#data",
+    "href": "good_practice/organize_analysis.html#data",
+    "title": "3  Organize an analysis",
+    "section": "3.2 Data",
+    "text": "3.2 Data\nDo not copy all of the data to your data/ folder if it is already stored somewhere. It saves space (as there won’t be several copy of the same heavy raw data), and makes sure that there is only one place where the raw data can be found to avoid confusion. Remember, you should never modify raw data files. Instead, use a shortchut, or a link, to the folder. This can be done in bash like so:\nln -s &lt;target&gt; &lt;symlink&gt;\nwhere you remplace  by the folder from which to create the link, and  by the name to give the symbolic link (or shortcut), e.g. ln -s S19192_scRNA ../../../projects/S19192/\nor in R like so:\ncreateLink(link=symlink, target)\nwhere you remplace target by the folder from which to create the link, and symlink by the name to give the symbolic link (or shortcut), e.g. createLink(link=\"S19192_scRNA\", \"../../../projects/S19192/\")\nUseful metadata should already be associated with the raw data.",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organize an analysis</span>"
+    ]
+  },
+  {
+    "objectID": "good_practice/organize_analysis.html#analysis",
+    "href": "good_practice/organize_analysis.html#analysis",
+    "title": "3  Organize an analysis",
+    "section": "3.3 Analysis",
+    "text": "3.3 Analysis\nIn the analysis/ folder, the general rule is to have one folder per subanalysis. The subanalysis folder is named with the date and a general title (e.g. 200301_scRNA/). You can create as many subanalysis and subfolders as necessary (e.g. 200301_scRNA/200301_preprocessing/). In each subanalysis folder, there is one script, most likely a quarto document .qmd that creates an easily readable report in .html. Any result created by this script is present in the same folder. If many results are created, organise them into folders (e.g. rds/ for saving R objects, figure/ for saving plots, table/ for saving tables etc.).\nThink about the architecture of your folder before starting your analysis. For this you need to break down your general idea of the analysis into smaller chunks. Are you going to analysis one or several datasets (and so, create one folder per dataset)? What are the planned steps of your analysis (and so, create one folder per step for a given dataset)? Of course, you might not know all of the analyses you will do in advance, but you will get an idea of the level of complexity of the architecture of folders to create.\nThis is important as it is not a good practice to move and rename folders or files. Some scripts depend on the results of previous analyses, so moving and renaming folders or files can create discrepencies in other analyses.\nTODO: do we allow for no folder to save results (e.g. if you only have one table as results, should it be in a table/ folder or just a table.csv is ok)",
+    "crumbs": [
+      "Good practice",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organize an analysis</span>"
+    ]
+  },
+  {
+    "objectID": "R/R_projects.html",
+    "href": "R/R_projects.html",
+    "title": "4  R projects",
+    "section": "",
+    "text": "5 Quarto\nUse of quarto, and best quarto parameter to use",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R projects</span>"
+    ]
+  },
+  {
+    "objectID": "R/R_projects.html#save-environment-r.session-renv",
+    "href": "R/R_projects.html#save-environment-r.session-renv",
+    "title": "4  R projects",
+    "section": "6.1 Save environment R.Session renv",
+    "text": "6.1 Save environment R.Session renv",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R projects</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html",
+    "href": "R/renv.html",
+    "title": "5  Introduction",
+    "section": "",
+    "text": "5.1 What is renv?\nrenv is a package management system for R that helps ensure reproducibility and portability of R projects. It allows you to create isolated environments for your R projects, making it easier to share and collaborate on code. The documentation is available at: https://rstudio.github.io/renv/articles/renv.html.",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html#why-should-you-use-renv",
+    "href": "R/renv.html#why-should-you-use-renv",
+    "title": "5  Introduction",
+    "section": "5.2 Why should you use renv?",
+    "text": "5.2 Why should you use renv?\nFor different analysis you might rely on various R packages. However, managing package versions and dependencies can be challenging. Here's why renv is a good practice for biologists:\n\nReproducibility: renv allows you to capture the exact versions of R packages used in your project. This ensures that your code can be reproduced in the future, even if new package versions become available.\nCollaboration: With renv, you can more easily share your R projects with colleagues or collaborators. They can set up the same environment using the renv.lock file, ensuring that everyone is working with the same package versions.\nAvoid conflicts: By using isolated environments renv makes it easier to avoid conflicts between different package versions, ensuring that your code runs consistently, even if you need to update a package for another analysis.",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html#installing-renv",
+    "href": "R/renv.html#installing-renv",
+    "title": "5  Introduction",
+    "section": "6.1 Installing renv",
+    "text": "6.1 Installing renv\nTo start using renv, you need to install it first. Open your R console and run the following command:\ninstall.packages(\"renv\")",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html#working-with-r-projects",
+    "href": "R/renv.html#working-with-r-projects",
+    "title": "5  Introduction",
+    "section": "6.2 Working with R projects",
+    "text": "6.2 Working with R projects\nWorking with R Projects in RStudio is necessary to use renv. But it is a good practice in general as it provides a structured and efficient way to manage your R scripts, data, and other files. Here are some reasons why you should always be using R Projects:\n\nOrganization: R Projects help you keep all related files in one place. This makes it easier to manage your scripts, data, and outputs, ensuring that your work is well-organized.\nReproducibility: R Projects ensures that your working directory is set correctly every time you open the project. This helps avoid issues related to file paths and makes your analysis reproducible.\nCollaboration: R Projects make it easier to collaborate with others. By sharing the project folder, your collaborators can easily access all the necessary files and run the analysis without any issues.\nVersion Control: R Projects integrate seamlessly with version control systems like Git. This allows you to track changes, revert to previous versions, and collaborate more effectively with others.\nEnvironment Management: R Projects allow you to manage your R environment more effectively. You can use packages like renv to create isolated environments for each project, ensuring that package versions and dependencies are consistent.\n\nHow to Create an R Project, you ask?\nCreating an R Project in RStudio is simple:\n\nOpen RStudio.\nGo to File &gt; New Project.\nChoose New Directory or Existing Directory depending on your needs.\nFollow the prompts to set up your project.",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html#initializing-renv-in-a-project",
+    "href": "R/renv.html#initializing-renv-in-a-project",
+    "title": "5  Introduction",
+    "section": "6.3 Initializing renv in a project",
+    "text": "6.3 Initializing renv in a project\nOnce renv is installed, you can initialize it in your R project. Open your R console, navigate to your project directory, and run the following command:\nrenv::init()\nThis will modify the .Rprofile file, as well as create an renv/ directory and a renv.lock file in your project, which will be used to manage your project's environment as follows:\n\nrenv.lock: This file captures the exact versions of packages used in your project. It ensures that the same package versions are used when the project is shared or restored.\nrenv/ folder: This folder contains the isolated environment for your project. It stores the packages and their dependencies specific to your project.",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html#managing-packages-with-renv",
+    "href": "R/renv.html#managing-packages-with-renv",
+    "title": "5  Introduction",
+    "section": "6.4 Managing packages with renv",
+    "text": "6.4 Managing packages with renv\nTo add packages to your project, you can use the same usual functions, e.g.:\ninstall.packages(\"dplyr\") \nBiocManager::install(\"DESeq2\")\nThis will install the package in your project's environment only. Once you have installed the packages that you want, you can update the renv.lock file by running:\nrenv::snapshot()\nYou can run this command at any time, for example when you add or update some packages.\nAt some point you might use one of the two following commands:\n\nthe renv::status() command compares the current state of the project's environment with the renv.lock file. It identifies any changes made to the environment, such as installing or updating packages. This helps you track the modifications made to the environment and ensures that the project remains reproducible.\nthe renv::restore() command restores the project's environment to the state captured in the renv.lock file. It installs the exact package versions specified in the file, ensuring that the project can be reproduced with the same environment. This is useful when you want to recreate the environment on a different system or restore it after modifications.",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html#sharing-your-project-with-renv",
+    "href": "R/renv.html#sharing-your-project-with-renv",
+    "title": "5  Introduction",
+    "section": "6.5 Sharing your project with renv",
+    "text": "6.5 Sharing your project with renv\nTo share your project with others, you can share the renv.lock file. Remember to run the renv::snapshot() command to capture the current versions of packages used in your project.",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "R/renv.html#recreating-a-renv-environment-from-a-renv.lock-file",
+    "href": "R/renv.html#recreating-a-renv-environment-from-a-renv.lock-file",
+    "title": "5  Introduction",
+    "section": "6.6 Recreating a renv environment from a renv.lock file",
+    "text": "6.6 Recreating a renv environment from a renv.lock file\nTo recreate the same environment using the renv.lock file, you can use the renv::restore() function. Here are the steps to do this:\n\nNavigate to a new or desired R project.\nMake sure the renv.lock file is located in the R project directory.\nExecute the following command to restore the environment:\n\nrenv::restore()\nThis command will read the renv.lock file and install the exact versions of the packages specified in the file. It will recreate the environment as it was when the renv.lock file was created.",
+    "crumbs": [
+      "R tips",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  }
+]
