@@ -1,0 +1,18 @@
+# R projects
+
+Working with R Projects is a good practice as it provides a structured and efficient way to manage your R scripts, data, and other files. Here are some reasons why you should always be using R Projects:
+Working with R Projects is a good practice when analysing in R. It provides a structured and efficient way to manage your R scripts, data, and results files, ensuring that your analysis is reproducible, organized, and easy to share.
+
+Here are the key reasons why you should always use R Projects:
+
+- Better organization: All related files (scripts, raw data, results, documentation) are stored in one single folder. This prevents confusion and makes it easy to navigate your work.
+
+- Automatic setting of working directory: R Projects automatically set the working directory to your project folder every time you open it. This means your file paths will work consistently, avoiding frustrating “file not found” errors.
+
+- Easier collaboration: When sharing a project folder, collaborators get all the files and can run your analysis without reconfiguring file paths.
+
+- Compatibility with best practices as R Projects integrate smoothly with:
+  - Git for version control, which tracks changes, allows you to roll back to earlier versions, and collaborate effectively.
+  - renv for package management, which records the exact package versions used so your project can be reproduced exactly in the future or on another computer.
+
+

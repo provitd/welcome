@@ -33,8 +33,6 @@ So here are the general steps on how to correctly save raw data:
 
 :::{.callout-note}
 A md5 is 32-character fingerprint of the file. If the file is not exactly the same as the original one, recomputing the md5 will give a different result and you will know that your file was corrupted (i.e. modified, truncated…). 
-
-![md5 principle: changing even one character will modify the md5. [image source: techtarget.com](https://www.techtarget.com/searchsecurity/definition/MD5)](../img/md5.jpeg){}
 :::
 
 :::{.callout-tip}
@@ -47,8 +45,6 @@ In R, you can for example run `tools::md5sum("/path/to/file")` to get the md5 of
 
 Data is a collection of raw and unorganized information. Without proper processing, organizing, and information about it, it cannot be interpreted. 
 Metadata is data about data. It gives a description and a context about the data. It can be the species, tissue type or conditions of the samples, as well as the lab protocol, sequencing technology etc... 
-
-![Data and metadata. Without metadata, you don't know what is inside your data. So always retain metadata together with the data.](../img/data-metadata.png){width="400"}
 
 If you filled GenomEast's LIMS correctly, you already have some of that information. You can save the project page of the study as a pdf and put it in the folder that contains the data. It contains general information about the study (ID, title, technology, date, collaborators, aim, description of samples...). You can also fill and export the table of the Samples conditions in `.csv` format. 
 

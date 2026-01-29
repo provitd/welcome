@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "welcome booklet"
+  author: "PROVitD team"
+  date: "today"
+  chapters:
+    - index.qmd
+    - part: "Good practice"
+      chapters:
+        - good_practice/raw_data.qmd
+        - good_practice/organize_analysis.qmd
+    - part: "R tips"
+      chapters:
+        - R/R_projects.qmd
+        - R/renv.qmd
+
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
