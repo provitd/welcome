@@ -117,5 +117,3 @@ What are the planned steps of your analysis (and so, create one folder per step 
 Of course, you might not know all of the analyses you will do in advance, but you will get an idea of the level of complexity of the architecture of folders to create.
 
 This is important as it is not a good practice to move and rename folders or files. Some scripts depend on the results of previous analyses, so moving and renaming folders or files can create discrepencies in other analyses. 
-
-TODO: do we allow for no folder to save results (e.g. if you only have one table as results, should it be in a table/ folder or just a table.csv is ok)
