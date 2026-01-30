@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "welcome booklet",
     "section": "",
-    "text": "1 Hello and welcome 👋",
+    "text": "1 Hello and welcome",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome` 👋</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome`</span>"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "section": "1.1 PROVitD Group",
     "text": "1.1 PROVitD Group\nThis book contains information needed by a new comer in the PROVitD Group regarding data management in the lab, use of this gitlab, ressources on bioinformatics topics…",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome` 👋</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome`</span>"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "1.2 Cheat Sheet",
     "text": "1.2 Cheat Sheet\nYou can also follow the links to various cheat sheets and print them out to decorate your desk:\n\nR: to discover R universe\n\nBase R: to get started with R\nRStudio: to get started with RStudio\nR Best Practice: to improve your R skills\nggplot2: to get started with generating plots\ndplyr: to manipulate datatables\ntidyr: to tidy datatables\nquarto: to create beautiful notebooks with integrated code\nrmarkdown: to create beautiful notebooks with integrated code (deprecated)\n\ngit: to version control code\n\ngit branching model: to develop tools with version control\n\nconda: to use contained and reproducible package environment",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome` 👋</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome`</span>"
     ]
   },
   {
@@ -122,18 +122,7 @@
     "href": "R/R_projects.html",
     "title": "4  R projects",
     "section": "",
-    "text": "5 Quarto\nUse of quarto, and best quarto parameter to use",
-    "crumbs": [
-      "R tips",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R projects</span>"
-    ]
-  },
-  {
-    "objectID": "R/R_projects.html#save-environment-r.session-renv",
-    "href": "R/R_projects.html#save-environment-r.session-renv",
-    "title": "4  R projects",
-    "section": "6.1 Save environment R.Session renv",
-    "text": "6.1 Save environment R.Session renv",
+    "text": "Working with R Projects is a good practice as it provides a structured and efficient way to manage your R scripts, data, and other files. Here are some reasons why you should always be using R Projects: Working with R Projects is a good practice when analysing in R. It provides a structured and efficient way to manage your R scripts, data, and results files, ensuring that your analysis is reproducible, organized, and easy to share.\nHere are the key reasons why you should always use R Projects:\n\nBetter organization: All related files (scripts, raw data, results, documentation) are stored in one single folder. This prevents confusion and makes it easy to navigate your work.\nAutomatic setting of working directory: R Projects automatically set the working directory to your project folder every time you open it. This means your file paths will work consistently, avoiding frustrating “file not found” errors.\nEasier collaboration: When sharing a project folder, collaborators get all the files and can run your analysis without reconfiguring file paths.\nCompatibility with best practices as R Projects integrate smoothly with:\n\nGit for version control, which tracks changes, allows you to roll back to earlier versions, and collaborate effectively.\nrenv for package management, which records the exact package versions used so your project can be reproduced exactly in the future or on another computer.",
     "crumbs": [
       "R tips",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>R projects</span>"
@@ -142,89 +131,89 @@
   {
     "objectID": "R/renv.html",
     "href": "R/renv.html",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "",
     "text": "5.1 What is renv?\nrenv is a package management system for R that helps ensure reproducibility and portability of R projects. It allows you to create isolated environments for your R projects, making it easier to share and collaborate on code. The documentation is available at: https://rstudio.github.io/renv/articles/renv.html.",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   },
   {
     "objectID": "R/renv.html#why-should-you-use-renv",
     "href": "R/renv.html#why-should-you-use-renv",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "5.2 Why should you use renv?",
     "text": "5.2 Why should you use renv?\nFor different analysis you might rely on various R packages. However, managing package versions and dependencies can be challenging. Here's why renv is a good practice for biologists:\n\nReproducibility: renv allows you to capture the exact versions of R packages used in your project. This ensures that your code can be reproduced in the future, even if new package versions become available.\nCollaboration: With renv, you can more easily share your R projects with colleagues or collaborators. They can set up the same environment using the renv.lock file, ensuring that everyone is working with the same package versions.\nAvoid conflicts: By using isolated environments renv makes it easier to avoid conflicts between different package versions, ensuring that your code runs consistently, even if you need to update a package for another analysis.",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   },
   {
     "objectID": "R/renv.html#installing-renv",
     "href": "R/renv.html#installing-renv",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "6.1 Installing renv",
     "text": "6.1 Installing renv\nTo start using renv, you need to install it first. Open your R console and run the following command:\ninstall.packages(\"renv\")",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   },
   {
     "objectID": "R/renv.html#working-with-r-projects",
     "href": "R/renv.html#working-with-r-projects",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "6.2 Working with R projects",
     "text": "6.2 Working with R projects\nWorking with R Projects in RStudio is necessary to use renv. But it is a good practice in general as it provides a structured and efficient way to manage your R scripts, data, and other files. Here are some reasons why you should always be using R Projects:\n\nOrganization: R Projects help you keep all related files in one place. This makes it easier to manage your scripts, data, and outputs, ensuring that your work is well-organized.\nReproducibility: R Projects ensures that your working directory is set correctly every time you open the project. This helps avoid issues related to file paths and makes your analysis reproducible.\nCollaboration: R Projects make it easier to collaborate with others. By sharing the project folder, your collaborators can easily access all the necessary files and run the analysis without any issues.\nVersion Control: R Projects integrate seamlessly with version control systems like Git. This allows you to track changes, revert to previous versions, and collaborate more effectively with others.\nEnvironment Management: R Projects allow you to manage your R environment more effectively. You can use packages like renv to create isolated environments for each project, ensuring that package versions and dependencies are consistent.\n\nHow to Create an R Project, you ask?\nCreating an R Project in RStudio is simple:\n\nOpen RStudio.\nGo to File &gt; New Project.\nChoose New Directory or Existing Directory depending on your needs.\nFollow the prompts to set up your project.",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   },
   {
     "objectID": "R/renv.html#initializing-renv-in-a-project",
     "href": "R/renv.html#initializing-renv-in-a-project",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "6.3 Initializing renv in a project",
     "text": "6.3 Initializing renv in a project\nOnce renv is installed, you can initialize it in your R project. Open your R console, navigate to your project directory, and run the following command:\nrenv::init()\nThis will modify the .Rprofile file, as well as create an renv/ directory and a renv.lock file in your project, which will be used to manage your project's environment as follows:\n\nrenv.lock: This file captures the exact versions of packages used in your project. It ensures that the same package versions are used when the project is shared or restored.\nrenv/ folder: This folder contains the isolated environment for your project. It stores the packages and their dependencies specific to your project.",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   },
   {
     "objectID": "R/renv.html#managing-packages-with-renv",
     "href": "R/renv.html#managing-packages-with-renv",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "6.4 Managing packages with renv",
     "text": "6.4 Managing packages with renv\nTo add packages to your project, you can use the same usual functions, e.g.:\ninstall.packages(\"dplyr\") \nBiocManager::install(\"DESeq2\")\nThis will install the package in your project's environment only. Once you have installed the packages that you want, you can update the renv.lock file by running:\nrenv::snapshot()\nYou can run this command at any time, for example when you add or update some packages.\nAt some point you might use one of the two following commands:\n\nthe renv::status() command compares the current state of the project's environment with the renv.lock file. It identifies any changes made to the environment, such as installing or updating packages. This helps you track the modifications made to the environment and ensures that the project remains reproducible.\nthe renv::restore() command restores the project's environment to the state captured in the renv.lock file. It installs the exact package versions specified in the file, ensuring that the project can be reproduced with the same environment. This is useful when you want to recreate the environment on a different system or restore it after modifications.",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   },
   {
     "objectID": "R/renv.html#sharing-your-project-with-renv",
     "href": "R/renv.html#sharing-your-project-with-renv",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "6.5 Sharing your project with renv",
     "text": "6.5 Sharing your project with renv\nTo share your project with others, you can share the renv.lock file. Remember to run the renv::snapshot() command to capture the current versions of packages used in your project.",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   },
   {
     "objectID": "R/renv.html#recreating-a-renv-environment-from-a-renv.lock-file",
     "href": "R/renv.html#recreating-a-renv-environment-from-a-renv.lock-file",
-    "title": "5  Introduction",
+    "title": "5  Renv",
     "section": "6.6 Recreating a renv environment from a renv.lock file",
     "text": "6.6 Recreating a renv environment from a renv.lock file\nTo recreate the same environment using the renv.lock file, you can use the renv::restore() function. Here are the steps to do this:\n\nNavigate to a new or desired R project.\nMake sure the renv.lock file is located in the R project directory.\nExecute the following command to restore the environment:\n\nrenv::restore()\nThis command will read the renv.lock file and install the exact versions of the packages specified in the file. It will recreate the environment as it was when the renv.lock file was created.",
     "crumbs": [
       "R tips",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
     ]
   }
 ]
