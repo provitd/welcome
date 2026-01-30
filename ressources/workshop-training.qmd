@@ -13,4 +13,5 @@
 - The Carpentries teached workshops on R/RStudio/bash applied to genomics [[link]](https://datacarpentry.org/lessons/#genomics)
 - Teaching material from Harvard Chan Bioinformatics Core [[link]](https://hbctraining.github.io/Training-modules/)
 - A large catalog of educational material for bioinformatics [[link]](https://glittr.org/?per_page=25&sort_by=stargazers&sort_direction=desc)
+- Teaching and exercises for Terminal / bash applied to biology [[link]](https://sandbox.bio/) and [[link]](https://sandboxbio.france-bioinformatique.fr/)
 
