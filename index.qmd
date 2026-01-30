@@ -5,6 +5,6 @@ This book contains information needed by a new comer in the [PROVitD Group](http
 
 ## Contributing
 
-May you have any suggestion, find any typo, or anything want to make a change that could improve this welcome booklet, let us know by creating an [issue](https://github.com/provitd/welcome/issues/new) or by [editing the page and creating a merge request](https://github.com/provitd/welcome/edit/main/good_practice/raw_data.qmd). It is available on the right side of any page in this quarto book.
+May you have any suggestion, find any typo, or want to make a change that could improve this welcome booklet, let us know by creating an [issue](https://github.com/provitd/welcome/issues/new) or by [editing the page and creating a merge request](https://github.com/provitd/welcome/edit/main/index.qmd). It is available on the right side of any page in this quarto book.
 
 Please keep in mind that this is a public booklet, so do not add any confidential information.
