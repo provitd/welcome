@@ -14,7 +14,7 @@
     "href": "index.html#contributing",
     "title": "welcome booklet",
     "section": "1.1 Contributing",
-    "text": "1.1 Contributing\nMay you have any suggestion, find any typo, or anything want to make a change that could improve this welcome booklet, let us know by creating an issue or by editing the page and creating a merge request. It is available on the right side of any page in this quarto book.",
+    "text": "1.1 Contributing\nMay you have any suggestion, find any typo, or anything want to make a change that could improve this welcome booklet, let us know by creating an issue or by editing the page and creating a merge request. It is available on the right side of any page in this quarto book.\nPlease keep in mind that this is a public booklet, so do not add any confidential information.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
