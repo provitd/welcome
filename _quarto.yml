@@ -15,6 +15,10 @@ book:
       chapters:
         - R/R_projects.qmd
         - R/renv.qmd
+    - part: "Bioinformatics ressources"
+      chapters:
+        - ressources/singlecell.qmd
+        - ressources/workshop-training.qmd
 
 
 format:

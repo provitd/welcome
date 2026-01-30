@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 /.quarto/
+_book/
 *.ipynb
 *.html
