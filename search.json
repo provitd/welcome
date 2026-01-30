@@ -4,29 +4,19 @@
     "href": "index.html",
     "title": "welcome booklet",
     "section": "",
-    "text": "1 Hello and welcome",
+    "text": "1 Introduction\nThis book contains information needed by a new comer in the PROVitD Group regarding data management in the lab, good practice in R, ressources on bioinformatics topics…",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome`</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
-    "objectID": "index.html#provitd-group",
-    "href": "index.html#provitd-group",
+    "objectID": "index.html#contributing",
+    "href": "index.html#contributing",
     "title": "welcome booklet",
-    "section": "1.1 PROVitD Group",
-    "text": "1.1 PROVitD Group\nThis book contains information needed by a new comer in the PROVitD Group regarding data management in the lab, use of this gitlab, ressources on bioinformatics topics…",
+    "section": "1.1 Contributing",
+    "text": "1.1 Contributing\nMay you have any suggestion, find any typo, or anything want to make a change that could improve this welcome booklet, let us know by creating an issue or by editing the page and creating a merge request. It is available on the right side of any page in this quarto book.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome`</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#cheat-sheet",
-    "href": "index.html#cheat-sheet",
-    "title": "welcome booklet",
-    "section": "1.2 Cheat Sheet",
-    "text": "1.2 Cheat Sheet\nYou can also follow the links to various cheat sheets and print them out to decorate your desk:\n\nR: to discover R universe\n\nBase R: to get started with R\nRStudio: to get started with RStudio\nR Best Practice: to improve your R skills\nggplot2: to get started with generating plots\ndplyr: to manipulate datatables\ntidyr: to tidy datatables\nquarto: to create beautiful notebooks with integrated code\nrmarkdown: to create beautiful notebooks with integrated code (deprecated)\n\ngit: to version control code\n\ngit branching model: to develop tools with version control\n\nconda: to use contained and reproducible package environment",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Hello and `welcome`</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
@@ -214,6 +204,94 @@
     "crumbs": [
       "R tips",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Renv</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/singlecell.html",
+    "href": "ressources/singlecell.html",
+    "title": "6  Single Cell",
+    "section": "",
+    "text": "6.1 Packages",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Single Cell</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/singlecell.html#packages",
+    "href": "ressources/singlecell.html#packages",
+    "title": "6  Single Cell",
+    "section": "",
+    "text": "R:\n\nGeneral analysis:\n\nSeurat\n\nAnnotation:\n\nsc-type\nSingleR\n\nTrajectories:\n\ndynverse\nmonocle3\nslingshot\n\nSpatial analysis:\n\nsemla\n\n\nPython:\n\nGeneral analysis:\n\nscanpy\nanndata",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Single Cell</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/singlecell.html#documentation",
+    "href": "ressources/singlecell.html#documentation",
+    "title": "6  Single Cell",
+    "section": "6.2 Documentation",
+    "text": "6.2 Documentation\n\nBest practices in single cell [link]\nTools developped for single cell [link]",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Single Cell</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/singlecell.html#databases",
+    "href": "ressources/singlecell.html#databases",
+    "title": "6  Single Cell",
+    "section": "6.3 Databases",
+    "text": "6.3 Databases\n\ncellxgene\nHuman Cell Atlas\nEBI Single Cell Expression Atlas\nArc Virtual Cell Atlas: 230 million cells (and expanding), spanning 21 organisms and 72 tissues",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Single Cell</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/workshop-training.html",
+    "href": "ressources/workshop-training.html",
+    "title": "7  Workshop and training",
+    "section": "",
+    "text": "7.1 In-person",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Workshop and training</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/workshop-training.html#in-person",
+    "href": "ressources/workshop-training.html#in-person",
+    "title": "7  Workshop and training",
+    "section": "",
+    "text": "Non-exhaustive catalog of trainings in France [link]\nWell recognized 1-week training to NGS and coding in Roscoff [link]\nCatalog of trainings offered by the Swiss Institute of Bioinformatics [link]",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Workshop and training</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/workshop-training.html#online",
+    "href": "ressources/workshop-training.html#online",
+    "title": "7  Workshop and training",
+    "section": "7.2 Online",
+    "text": "7.2 Online\n\nTeaching material from GenomEast trainings [link]\nThe Carpentries teached workshops on R/RStudio/bash applied to genomics [link]\nTeaching material from Harvard Chan Bioinformatics Core [link]\nA large catalog of educational material for bioinformatics [link]",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Workshop and training</span>"
+    ]
+  },
+  {
+    "objectID": "ressources/cheatsheets.html",
+    "href": "ressources/cheatsheets.html",
+    "title": "8  Cheat Sheets",
+    "section": "",
+    "text": "You can also follow the links to various cheat sheets and print them out to decorate your desk:\n\nR: to discover R universe\n\nBase R: to get started with R\nRStudio: to get started with RStudio\nR Best Practice: to improve your R skills\nggplot2: to get started with generating plots\ndplyr: to manipulate datatables\ntidyr: to tidy datatables\nquarto: to create beautiful notebooks with integrated code\nrmarkdown: to create beautiful notebooks with integrated code (deprecated)\n\ngit: to version control code\n\ngit branching model: to develop tools with version control\n\nconda: to use contained and reproducible package environment",
+    "crumbs": [
+      "Bioinformatics ressources",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cheat Sheets</span>"
     ]
   }
 ]
