@@ -2,7 +2,7 @@
 
 This repository contains quarto documents needed to create the welcome book of the [PROVitD Group](https://www.igbmc.fr/equipes/sous-groupes/roles-physiopathologiques-des-voies-de-signalisation-de-la-vitamine-d).
 
-It regards data management in the lab, good practice in R, ressources on bioinformatics topics.
+It regards data management in the lab, good practice in R, ressources on bioinformatics topics, etc...
 
 It is available here: https://provitd.github.io/welcome/.
 
