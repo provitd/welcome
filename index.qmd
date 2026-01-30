@@ -1,6 +1,10 @@
 
-# Hello and `welcome`
+# Introduction
 
-## PROVitD Group
+This book contains information needed by a new comer in the [PROVitD Group](https://www.igbmc.fr/equipes/sous-groupes/roles-physiopathologiques-des-voies-de-signalisation-de-la-vitamine-d) regarding data management in the lab, good practice in R, ressources on bioinformatics topics...
 
-This book contains information needed by a new comer in the  [PROVitD Group](https://www.igbmc.fr/equipes/sous-groupes/roles-physiopathologiques-des-voies-de-signalisation-de-la-vitamine-d) regarding data management in the lab, use of this gitlab, ressources on bioinformatics topics...
+## Contributing
+
+May you have any suggestion, find any typo, or anything want to make a change that could improve this welcome booklet, let us know by creating an [issue](https://github.com/provitd/welcome/issues/new) or by [editing the page and creating a merge request](https://github.com/provitd/welcome/edit/main/good_practice/raw_data.qmd). It is available on the right side of any page in this quarto book.
+
+Please keep in mind that this is a public booklet, so do not add any confidential information.

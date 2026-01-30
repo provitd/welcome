@@ -19,13 +19,15 @@ book:
       chapters:
         - ressources/singlecell.qmd
         - ressources/workshop-training.qmd
-
+        - ressources/cheatsheets.qmd
+  repo-actions: [edit, issue]
+  repo-url: https://github.com/provitd/welcome
+  repo-branch: main
 
 format:
   html:
     theme: cosmo
+    toc: true
+    toc-depth: 3
   pdf:
     documentclass: scrreprt
-
-
-
