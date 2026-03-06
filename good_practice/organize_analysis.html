@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0dd2bd5de344125cf763a379ddc3eb04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-00ccf60c28c3bdf2d57f5131fbf16f11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -237,10 +237,10 @@ ul.task-list li input[type="checkbox"] {
 <p>An analysis should be breakable in a couple of folders:</p>
 <ul>
 <li><p><code>data/</code> it should contain (links) to raw data. It also contains useful metadata. A link can be created in R like so: <code>R.utils::createLink(link, target)</code></p></li>
-<li><p><code>script/</code> it should contain one or several (organised) scripts that can be run from start to finish to reproduce your analysis. Create folders for specific subanalysis with the date as a prefix (e.g <code>YYMMDD_trajectory_Luminal</code>) make sure to use the same structure in the <code>result/</code> folder. A folder can be created in R like so: <code>dir.create(directory)</code></p></li>
-<li><p><code>result/</code> it should contain tables, plots, R object that were produced during the analysis. You can create specific folder to keep a nice structure, for example <code>figure</code>, <code>table</code>, <code>rds</code>…</p></li>
+<li><p><code>work/</code> it should contain one or several (organised) subfolders of specific analysis. Create such subfolders with the date as a prefix followed by an explicit name (e.g <code>YYMMDD_trajectory_Luminal</code>). A subfolder contains script(s) that can be run from start to finish to reproduce the analysis, with corresponding tables, plots, R objects. You can create folders for the results to keep a nice structure, for example <code>figure</code>, <code>table</code>, <code>rds</code>…</p></li>
 <li><p><code>doc/</code> containing various documentation that needs to be save, for example important related papers</p></li>
 </ul>
+<p>A folder can be created in R like so: <code>dir.create(directory)</code></p>
 <p>An example of an analysis folder could be:</p>
 <pre><code>├── data
 │&nbsp;&nbsp; ├── ABCetall_2021_scRNA -&gt; ../../../litterature/ABCetal_2021_scRNA/
@@ -256,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 │&nbsp;&nbsp; └── litterature
 │&nbsp;&nbsp;     ├── ABCetal_2021.pdf
 │&nbsp;&nbsp;     └── XYZetal_2019.pdf
-├── analysis
+├── work
 │&nbsp;&nbsp; └── 200301_scRNA
 │&nbsp;&nbsp;     └── 200301_preprocessing
 │&nbsp;&nbsp;         ├── preprocessing.qmd
