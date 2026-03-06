@@ -105,9 +105,9 @@ where you remplace `target` by the folder from which to create the link, and `sy
 
 Useful metadata should already be associated with the raw data. 
 
-## Analysis
+## Work
 
-In the `analysis/` folder, the general rule is to have one folder per subanalysis. The subanalysis folder is named with the date and a general title (e.g. `200301_scRNA/`). You can create as many subanalysis and subfolders as necessary (e.g. `200301_scRNA/200301_preprocessing/`). 
+In the `work/` folder, the general rule is to have one folder per subanalysis. The subanalysis folder is named with the date and a general title (e.g. `200301_scRNA/`). You can create as many subanalysis and subfolders as necessary (e.g. `200301_scRNA/200301_preprocessing/`). 
 In each subanalysis folder, there is one script, most likely a quarto document `.qmd` that creates an easily readable report in `.html`. 
 Any result created by this script is present in the same folder. If many results are created, organise them into folders (e.g. `rds/` for saving R objects, `figure/` for saving plots, `table/` for saving tables etc.).
 
