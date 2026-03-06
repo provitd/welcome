@@ -204,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#generalities" id="toc-generalities" class="nav-link active" data-scroll-target="#generalities"><span class="header-section-number">3.1</span> Generalities</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="header-section-number">3.2</span> Data</a></li>
-  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis"><span class="header-section-number">3.3</span> Analysis</a></li>
+  <li><a href="#work" id="toc-work" class="nav-link" data-scroll-target="#work"><span class="header-section-number">3.3</span> Work</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/provitd/welcome/edit/main/good_practice/organize_analysis.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/provitd/welcome/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -312,9 +312,9 @@ ul.task-list li input[type="checkbox"] {
 <p>where you remplace <code>target</code> by the folder from which to create the link, and <code>symlink</code> by the name to give the symbolic link (or shortcut), e.g.&nbsp;<code>createLink(link="S19192_scRNA", "../../../projects/S19192/")</code></p>
 <p>Useful metadata should already be associated with the raw data.</p>
 </section>
-<section id="analysis" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="analysis"><span class="header-section-number">3.3</span> Analysis</h2>
-<p>In the <code>analysis/</code> folder, the general rule is to have one folder per subanalysis. The subanalysis folder is named with the date and a general title (e.g.&nbsp;<code>200301_scRNA/</code>). You can create as many subanalysis and subfolders as necessary (e.g.&nbsp;<code>200301_scRNA/200301_preprocessing/</code>). In each subanalysis folder, there is one script, most likely a quarto document <code>.qmd</code> that creates an easily readable report in <code>.html</code>. Any result created by this script is present in the same folder. If many results are created, organise them into folders (e.g.&nbsp;<code>rds/</code> for saving R objects, <code>figure/</code> for saving plots, <code>table/</code> for saving tables etc.).</p>
+<section id="work" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="work"><span class="header-section-number">3.3</span> Work</h2>
+<p>In the <code>work/</code> folder, the general rule is to have one folder per subanalysis. The subanalysis folder is named with the date and a general title (e.g.&nbsp;<code>200301_scRNA/</code>). You can create as many subanalysis and subfolders as necessary (e.g.&nbsp;<code>200301_scRNA/200301_preprocessing/</code>). In each subanalysis folder, there is one script, most likely a quarto document <code>.qmd</code> that creates an easily readable report in <code>.html</code>. Any result created by this script is present in the same folder. If many results are created, organise them into folders (e.g.&nbsp;<code>rds/</code> for saving R objects, <code>figure/</code> for saving plots, <code>table/</code> for saving tables etc.).</p>
 <p>Think about the architecture of your folder before starting your analysis. For this you need to break down your general idea of the analysis into smaller chunks. Are you going to analysis one or several datasets (and so, create one folder per dataset)? What are the planned steps of your analysis (and so, create one folder per step for a given dataset)? Of course, you might not know all of the analyses you will do in advance, but you will get an idea of the level of complexity of the architecture of folders to create.</p>
 <p>This is important as it is not a good practice to move and rename folders or files. Some scripts depend on the results of previous analyses, so moving and renaming folders or files can create discrepencies in other analyses.</p>
 
