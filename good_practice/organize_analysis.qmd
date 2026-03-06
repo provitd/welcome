@@ -11,12 +11,12 @@ An analysis should be breakable in a couple of folders:
 - `data/` it should contain (links) to raw data. It also contains useful metadata.
 A link can be created in R like so: `R.utils::createLink(link, target)`
 
-- `script/` it should contain one or several (organised) scripts that can be run from start to finish to reproduce your analysis. Create folders for specific subanalysis with the date as a prefix (e.g `YYMMDD_trajectory_Luminal`) make sure to use the same structure in the `result/` folder.
-A folder can be created in R like so: `dir.create(directory)`
-
-- `result/` it should contain tables, plots, R object that were produced during the analysis. You can create specific folder to keep a nice structure, for example `figure`, `table`, `rds`...
+- `work/` it should contain one or several (organised) subfolders of specific analysis. Create such subfolders with the date as a prefix followed by an explicit name (e.g `YYMMDD_trajectory_Luminal`). A subfolder contains script(s) that can be run from start to finish to reproduce the analysis, with corresponding tables, plots, R objects. You can create folders for the results to keep a nice structure, for example `figure`, `table`, `rds`... 
 
 - `doc/` containing various documentation that needs to be save, for example important related papers
+
+A folder can be created in R like so: `dir.create(directory)`
+
 
 An example of an analysis folder could be:
 
@@ -35,7 +35,7 @@ An example of an analysis folder could be:
 │   └── litterature
 │       ├── ABCetal_2021.pdf
 │       └── XYZetal_2019.pdf
-├── analysis
+├── work
 │   └── 200301_scRNA
 │       └── 200301_preprocessing
 │           ├── preprocessing.qmd
