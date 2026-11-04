@@ -222,7 +222,7 @@
     "href": "ressources/singlecell.html#packages",
     "title": "6  Single Cell",
     "section": "",
-    "text": "R:\n\nGeneral analysis:\n\nSeurat\n\nAnnotation:\n\nsc-type\nSingleR\n\nTrajectories:\n\ndynverse\nmonocle3\nslingshot\n\nSpatial analysis:\n\nsemla\n\n\nPython:\n\nGeneral analysis:\n\nscanpy\nanndata\n[rapids-singlecell](https://rapids-singlecell.readthedocs.io/\n\nSpatial analysis:\n\nsquidpy\nnichecompass",
+    "text": "R:\n\nGeneral analysis:\n\nSeurat\n\nAnnotation:\n\nsc-type\nSingleR\n\nTrajectories:\n\ndynverse\nmonocle3\nslingshot\n\nSpatial analysis:\n\nsemla\n\n\nPython:\n\nGeneral analysis:\n\nscanpy\nanndata\n[rapids-singlecell](https://rapids-singlecell.readthedocs.io/\n\nSpatial analysis:\n\nspatialdata\nsquidpy\nnichecompass\n\nMore:\n\nscverse",
     "crumbs": [
       "Bioinformatics ressources",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Single Cell</span>"
