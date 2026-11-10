@@ -222,7 +222,7 @@
     "href": "ressources/singlecell.html#packages",
     "title": "6  Single Cell",
     "section": "",
-    "text": "R:\n\nGeneral analysis:\n\nSeurat\n\nAnnotation:\n\nsc-type\nSingleR\n\nTrajectories:\n\ndynverse\nmonocle3\nslingshot\n\nSpatial analysis:\n\nsemla\n\n\nPython:\n\nGeneral analysis:\n\nscanpy\nanndata\n[rapids-singlecell](https://rapids-singlecell.readthedocs.io/\n\nSpatial analysis:\n\nspatialdata\nsquidpy\nnichecompass\n\nMore:\n\nscverse",
+    "text": "R:\n\nGeneral analysis:\n\nSeurat\n\nAnnotation:\n\nsc-type\nSingleR\n\nTrajectories:\n\ndynverse\nmonocle3\nslingshot\n\nSpatial analysis:\n\nsemla\n\n\nPython:\n\nGeneral analysis:\n\nscanpy\nanndata\nrapids-singlecell\n\nSpatial analysis:\n\nspatialdata\nsquidpy\nnichecompass\n\nMore:\n\nscverse",
     "crumbs": [
       "Bioinformatics ressources",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Single Cell</span>"
@@ -244,7 +244,7 @@
     "href": "ressources/singlecell.html#databases",
     "title": "6  Single Cell",
     "section": "6.3 Databases",
-    "text": "6.3 Databases\n\ncellxgene\nHuman Cell Atlas\nEBI Single Cell Expression Atlas\nArc Virtual Cell Atlas: 230 million cells (and expanding), spanning 21 organisms and 72 tissues\n[Tabula Sapiens](https://tabula-sapiens.sf.czbiohub.org",
+    "text": "6.3 Databases\n\ncellxgene\nHuman Cell Atlas\nEBI Single Cell Expression Atlas\nArc Virtual Cell Atlas: 230 million cells (and expanding), spanning 21 organisms and 72 tissues\nTabula Sapiens",
     "crumbs": [
       "Bioinformatics ressources",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Single Cell</span>"
