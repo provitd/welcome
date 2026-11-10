@@ -19,7 +19,7 @@
   - General analysis: 
     - [scanpy](https://scanpy.readthedocs.io/)
     - [anndata](https://anndata.readthedocs.io/)
-    - [rapids-singlecell](https://rapids-singlecell.readthedocs.io/
+    - [rapids-singlecell](https://rapids-singlecell.readthedocs.io/)
   - Spatial analysis:
     - [spatialdata](https://spatialdata.scverse.org/projects/io/en/latest/)
     - [squidpy](https://squidpy.readthedocs.io/)
@@ -37,4 +37,4 @@
 - [Human Cell Atlas](https://singlecell.broadinstitute.org/)
 - [EBI Single Cell Expression Atlas](https://www.ebi.ac.uk/gxa/sc/home)
 - [Arc Virtual Cell Atlas](https://arcinstitute.org/tools/virtualcellatlas): 230 million cells (and expanding), spanning 21 organisms and 72 tissues 
-- [Tabula Sapiens](https://tabula-sapiens.sf.czbiohub.org
+- [Tabula Sapiens](https://tabula-sapiens.sf.czbiohub.org)
